@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Random Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="generateCard()">
+    <div id="cardBody">
+        <div id="cardSuitUpper"></div>
+        <div id="cardValue"></div>
+        <div id="cardSuitLower"></div>
+    </div>
+    <div id="options">
+        <form id="sizingForm">
+            <input type="text" id="height" name="height" placeholder="Height"><br>
+            <input type="text" id="width" name="width" placeholder="Width"><br>
+            <button type="submit" id="sizeChangeButton">Submit size change</button>
+        </form>
+        <button id="generateNewCard" type="button" onclick="generateCard(),clearInterval(countdownTimer),countdown()">Generate new card</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
